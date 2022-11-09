@@ -8,10 +8,10 @@ const equipoListar=()=>{
     }
     
     grupoB ={
-        '1':'Aguilas Doradas',
-        '2':'Medellin',
-        '3':'Pasto',
-        '4':'America'
+        '5':'Aguilas Doradas',
+        '6':'Medellin',
+        '7':'Pasto',
+        '8':'America'
     }
     return {grupoA, grupoB};
 }
