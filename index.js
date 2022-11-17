@@ -11,15 +11,6 @@ server.get('/',function (req,res){
     res.send('Pagina Principal');
     res.writeHead(200);
 })
-/* // Aqui nos llevamos esto a las ruras (otros archivos)
-server.get('/equipos',function (req,res){
-    res.send('Hola equipos');
-})
-
-server.get('/partidos',function (req,res){
-    res.send('Hola partidos');
-})
-*/
 
 //Rutas para partidos, equipos, categorias, etc., desde el index
 server.use(express.json())
