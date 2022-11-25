@@ -5,6 +5,7 @@ const eqRuta = require('./routers/equiposRouter.js')
 const prRuta = require('./routers/partidosRouter.js')
 const ctRuta = require('./routers/categoriasRouter.js')
 const database = require('./config/database.js')
+const cors = require ('cors')
 
 //Crear servidor con "Express"
 server.get('/',function (req,res){
@@ -17,6 +18,8 @@ server.use(express.json())
 server.use('/equipos', eqRuta)
 server.use('/partidos', prRuta)
 server.use('/categorias', ctRuta)
+//"Cors" se crea para conectar el back con el front
+server.use('cors'())
 
 
 server.listen(puerto, function(){
