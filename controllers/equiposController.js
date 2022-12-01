@@ -1,9 +1,8 @@
 const equiposModel = require('../models/equiposSchema.js')
 
-const equipoListar= async (req, res)=>{
+const equiposListar= async (req, res)=>{
     const equipos = await equiposModel.find()
     res.status(200).send(equipos)
-
 
     //Crear listado clave valor
     /*
@@ -12,8 +11,7 @@ const equipoListar= async (req, res)=>{
         '2':'Pereira',
         '3':'SantaFe',
         '4':'Junior',      
-    }
-    
+    }    
     grupoB ={
         '1':'Aguilas Doradas',
         '2':'Medellin',
@@ -88,4 +86,4 @@ const equiposEliminar=async(req, res)=>{
     }
 }
 
-module.exports={equipoListar, equiposGuardar, equiposObtener, equiposActualizar, equiposEliminar};
+module.exports={equiposListar, equiposGuardar, equiposObtener, equiposActualizar, equiposEliminar};

@@ -5,10 +5,12 @@ const equiposControllers=require('../controllers/equiposController.js');
 // no es necesario el puerto ya esta en el index.js
 // const puerto=3000;
 
-
+/*
 router.get('/',function (req,res){
     res.send(equiposControllers.equipoListar());
-})
+})*/
+
+router.get("/", equiposControllers.equiposListar);
 
 router.get("/:id", equiposControllers.equiposObtener);
 

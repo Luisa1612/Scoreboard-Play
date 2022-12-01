@@ -10,7 +10,7 @@ router.get("/",function (req,res){
     res.send(categoriasControllers.categoriasListar());
 })*/
 
-router.get('/:id', categoriasControllers.categoriasListar)
+router.get('/', categoriasControllers.categoriasListar)
 
 router.get("/:id", categoriasControllers.categoriasObtener);
 
