@@ -1,7 +1,8 @@
 const mongoose = require("mongoose");
 
 //Establecer Schema (esquema)
-const partidosSchema = mongoose.Schema({
+const partidosSchema = mongoose.Schema(
+  {
   partido: {
     type: String,
     required: true,
