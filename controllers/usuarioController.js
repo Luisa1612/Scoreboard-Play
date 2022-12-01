@@ -19,4 +19,4 @@ const usuarioGuardar = async (req, res)=>{
 
 }
 
-module.exports={usuarioGuardar}
+module.exports = {usuarioGuardar}

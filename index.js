@@ -3,10 +3,10 @@ const server = express();
 const puerto=3000;
 const eqRuta = require('./routers/equiposRouter.js')
 const prRuta = require('./routers/partidosRouter.js')
+const ctRuta = require('./routers/categoriasRouter.js')
 
 //const usRuta = require ('./routers/usuarioRouter.js')
 
-const ctRuta = require('./routers/categoriasRouter.js')
 const database = require('./config/database.js')
 const cors = require ('cors')
 
@@ -20,11 +20,11 @@ server.use(cors())
 
 
 //Rutas para partidos, equipos, categorias, etc., desde el index
-server.use(express.json())
-server.use('/equipos', eqRuta)
-server.use('/partidos', prRuta)
-server.use('/categorias', ctRuta)
-//server.use('/usuario/', usRuta)
+server.use(express.json());
+server.use('/equipos', eqRuta);
+server.use('/partidos', prRuta);
+server.use('/categorias', ctRuta);
+//server.use('/usuario', usRuta);
 
 
 

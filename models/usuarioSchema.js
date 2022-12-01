@@ -19,13 +19,12 @@ const usuarioSchema=mongoose.Schema(
             type:String,
             required:true,
             trim:true,
-        },
-        
+        },        
         
         fcreado:{
             type:Date,
             default:Date.now(),
-        }
+        },
         
     }
 )
