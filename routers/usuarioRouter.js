@@ -5,4 +5,4 @@ const usuarioControl = require('../controllers/usuarioController')
 router.post('./', usuarioControl.usuarioGuardar)
 
 
-module.exports = {router}
+module.exports = {router};
